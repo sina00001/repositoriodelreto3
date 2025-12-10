@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto3Uveg</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Registro de la persona Usuaria</h1>
+    <p>En este formulario encontrara preguntas para reunir informacion sobre los posibles temas de su interés.</p>
+    <h2>Descripcion sobre usted.</h2>
+    <textarea id="comentarios" name="comentarios" rows="5" placeholder="Por favor ingrese la descripcion aquí..."></textarea>
+    <h2>Opciones de Interés</h2>
+    <div class="checkbox-group">
+        <label>
+            <input type="checkbox" name="opcion1" value="a"> Opción A: Tecnología
+        </label>
+        <label>
+            <input type="checkbox" name="opcion2" value="b"> Opción B: Arte
+        </label>
+        <label>
+            <input type="checkbox" name="opcion3" value="c"> Opción C: Deporte
+        </label>
+        <label>
+            <input type="checkbox" name="opcion4" value="d"> Opción D: Otros
+        </label>
+    </div>
+    <hr>
+    <h2>Formulario de Contacto</h2>
+    <form action="/submit-form" method="post">
+        <div class="form-group">
+            <label for="nombre">1. Nombre:</label>
+            <input type="text" placeholder="Ingrese su nombre completo" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="email">2. Correo Electrónico:</label>
+            <input type="text" placeholder="Asegurese de tener acceso a su correo" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="telefono">3. Contraseña:</label>
+            <input type="password" placeholder="Mayor a 18 caracteres"id="telefono" name="telefono">
+        </div>
+        <div class="form-group">
+            <label for="ciudad">4. Confirmar Contraseña:</label>
+            <input type="password" placeholder="Repita la contraseña." id="ciudad" name="ciudad">
+        </div>
+        <button type="submit">Registrarse.</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+/*
+  ESTILOS GENERAL Y DEL CONTENEDOR
+*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #efebe9; /* Fondo detras del formulario */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alineación superior para el scroll */
+    min-height: 100vh;
+    padding-top: 50px; /* Espacio superior */
+}
+.container {
+    max-width: 500px; 
+    width: 90%;
+    margin-bottom: 50px;
+    background: #ffffff; /* fondo del formulario en general */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-top: 5px solid #007bff; /* Línea de acento azul */
+}
+/*
+  Colores y tipografía.
+*/
+h1 {
+    color: #343a40; /* Gris oscuro */
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 2em;
+}
+
+h2 {
+    color: #f720a4; /* Color principal de las letras */
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 8px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+p {
+    line-height: 1.6;
+    color: #6c757d; /* Gris para el texto de apoyo */
+    text-align: center;
+    margin-bottom: 20px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ced4da;
+    margin: 30px 0;
+}
+/*
+  ESTILOS DE FORMULARIO
+ Área de Texto donde el usuario pone su descripcion */
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    box-sizing: border-box;
+    min-height: 100px;
+    resize: vertical; /*redimensionamiento-vertical */
+    transition: border-color 0.3s;
+}
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+/* Checkbox Group de las opciones a rellenar*/
+.checkbox-group {
+    padding: 10px;
+    border: 1px dashed #ced4da;
+    border-radius: 6px;
+}
+
+.checkbox-group label {
+    display: flex; /*casillas */
+    align-items: center;
+    margin-bottom: 8px;
+    color: #343a40;
+}
+
+ .checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    accent-color: #007bff; /*checkbox de las opciones A,B,C,D */
+} 
+
+/* Groupo-Campos del Formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600; /* grosor */
+    color: #495057; /* Enumeracion de los titulos de la preguntas 1,2,3,4.*/
+}
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;/*_shadowbox*/
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Efecto de enfoque azul suave */
+    outline: none;
+}
+/* Placeholder */
+::placeholder {
+    color: #bdb0ad;
+    opacity: 1;
+}
+/*
+  BOTÓN DE ENVÍO
+*/
+button[type="submit"] {
+    width: 100%; /* Botón de ancho completo */
+    background-color: #28a745; /* Verde fuerte para el boton de Registrarse */
+    color: white; /* letras del boton */
+    padding: 12px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover {
+    background-color: #218838; /* Difuminado en verde al pasar el cursor */
+}
